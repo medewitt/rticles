@@ -271,3 +271,15 @@ tf_article <- function(..., keep_tex = TRUE, citation_package = 'natbib') {
     "tf_article", keep_tex = keep_tex, citation_package = citation_package, ...
   )
 }
+
+
+#' @section \code{researcherone_article}: This format was adapted from The American
+#'   Statistican (TAS) format, but it should be fairly consistent across
+#'   American Statistical Association (ASA) journals.
+#' @export
+#' @rdname article
+researcherone_article <- function(..., keep_tex = TRUE, citation_package = 'natbib') {
+  pdf_document_format(
+    "researcherone_article", keep_tex = keep_tex, citation_package = citation_package, ...
+  )
+}

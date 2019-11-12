@@ -1,0 +1,30 @@
+---
+title: Capitalized Title Here
+article_id: 12324
+author:
+  - name: Alice Anonymous
+    firstname: Alice
+    surname: Anonymous
+    email: alice@example.com
+    affiliation: Some Institute of Technology
+  - name: Bob Security
+    firstname: Bob
+    surname: Security
+    email: bob@example.com
+    affiliation: Another University
+abstract: >
+  An abstract of less than 150 words.
+acknowledgements: |
+  Acknowledgements
+keywords:
+  - first keyword
+  - second keyword
+output:
+  rticles::researcherone_article
+---
+
+# Can We
+
+## Do this?
+
+Test

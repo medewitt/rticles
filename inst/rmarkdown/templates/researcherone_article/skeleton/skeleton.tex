@@ -1,0 +1,104 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[sort&compress]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+
+\usepackage{amsthm, amsmath, amssymb, mathrsfs, multirow, url, subfigure}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage[usenames]{color}
+%\usepackage{fullpage}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\scalebox{0.25}{
+\includegraphics{resone-logo.png}}
+%\includegraphics{R-dot-one.png}}
+\rhead{
+{\small
+\url{www.researchers.one/article/12324}} % fill in URL here
+}
+}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{prop}{Proposition}
+\newtheorem{lem}{Lemma}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{ex}{Example}
+\newtheorem{remark}{Remark}
+
+
+
+
+
+\title{Capitalized Title Here}
+
+\author{
+  Alice Anonymous\\
+  Bob Security}
+
+
+\date{
+\today %\today
+}
+
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+\begin{abstract}
+testing
+\\
+
+\smallskip
+
+%\keywords{
+%    %    first keyword \and
+%    %    second keyword \and
+%    %}
+
+\end{abstract}
+\Keywords{first keyword, second keyword}
+
+\hypertarget{can-we}{%
+\section{Can We}\label{can-we}}
+
+\hypertarget{do-this}{%
+\subsection{Do this?}\label{do-this}}
+
+Test
+
+
+
+%\section*{Acknowledgments}
+
+%Authors' acknowledgments (if any)...
+
+
+
+
+% If doing bibliography with BibTeX
+
+\bibliographystyle{apalike}
+\bibliography{}
+
+}
+
+
+\end{document}
+
+
+
