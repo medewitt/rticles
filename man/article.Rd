@@ -21,7 +21,7 @@
 \alias{sim_article}
 \alias{springer_article}
 \alias{tf_article}
-\alias{researcherone_article}
+\alias{researchersone_article}
 \title{R Markdown output formats for (journal) articles}
 \usage{
 acm_article(...)
@@ -72,7 +72,7 @@ springer_article(..., keep_tex = TRUE, citation_package = "none")
 
 tf_article(..., keep_tex = TRUE, citation_package = "natbib")
 
-researcherone_article(..., keep_tex = TRUE,
+researchersone_article(..., keep_tex = TRUE,
   citation_package = "natbib")
 }
 \arguments{
@@ -237,10 +237,9 @@ Possible arguments for the YAML header are:
 \url{http://www.tandf.co.uk/journals/authors/InteractCADLaTeX.zip}.
 }
 
-\section{\code{researcherone_article}}{
- This format was adapted from The American
-  Statistican (TAS) format, but it should be fairly consistent across
-  American Statistical Association (ASA) journals.
+\section{\code{researchersone_article}}{
+ This format was adapted from Researchers.One
+    article, available at \url{https://www.researchers.one/faqs}
 }
 
 \examples{

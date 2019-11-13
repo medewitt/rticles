@@ -173,7 +173,12 @@ $endif$
 \def\footnote{\protect\rmarkdownfootnote}
 
 \title{$title$}
-\author{First Author\footnote{First Author affiliation}, \; Second Author\footnote{Second Author affiliation}, \; and Third Author\footnote{Third Author affiliation}}
+%\author{First Author\footnote{First Author affiliation}, \; Second Author\footnote{Second Author affiliation}, \; and Third Author\footnote{Third Author affiliation}}
+\author{
+$for(author)$
+  $author.name$\footnote{$author.affiliation$}$sep$,
+$endfor$
+}
 \date{
 \today
 }
