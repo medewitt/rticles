@@ -1,11 +1,11 @@
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage[sort&compress]{natbib}
-\bibpunct{(}{)}{;}{a}{}{,} 
+\bibpunct{(}{)}{;}{a}{}{,}
 
 \usepackage{amsthm, amsmath, amssymb, mathrsfs, multirow, url, subfigure}
-\usepackage{graphicx} 
-\usepackage{ifthen} 
+\usepackage{graphicx}
+\usepackage{ifthen}
 \usepackage{amsfonts}
 \usepackage[usenames]{color}
 
@@ -15,13 +15,26 @@
 \lhead{\scalebox{0.25}{
 \includegraphics{resone-logo.png}}
 \rhead{
-{\small 
+{\small
 \url{www.researchers.one/article/$article_id$}} % fill in URL here
 }
 }
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
-
-\theoremstyle{plain} 
+\theoremstyle{plain}
 \newtheorem{thm}{Theorem}
 \newtheorem{cor}{Corollary}
 \newtheorem{prop}{Proposition}
@@ -31,7 +44,7 @@
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}
 
-\theoremstyle{remark} 
+\theoremstyle{remark}
 \newtheorem{ex}{Example}
 \newtheorem{remark}{Remark}
 
@@ -186,11 +199,11 @@ $endfor$
 
 \begin{document}
 
-\maketitle 
+\maketitle
 
 \thispagestyle{fancy}
 
-\begin{abstract}    
+\begin{abstract}
 $abstract$
 
 \smallskip

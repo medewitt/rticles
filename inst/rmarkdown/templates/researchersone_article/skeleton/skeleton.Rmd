@@ -23,9 +23,9 @@ output:
 bibliography: test.bib
 ---
 
-# Can We
+# First Level Heading
 
-## Do this?
+## Second Level Heading
 
 See @efron196 for more details.
 
@@ -34,14 +34,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.^[There is a footnote here.]
-
-```{r}
-2+2
-```
-
-# LaTeX Support
-
-$$a^2+b^2=c^2$$
 
 # LaTeX Support
 
@@ -61,6 +53,17 @@ knitr::kable(head(iris),
              booktab = TRUE, 
              caption = "The Iris Data Set")
 ```
+
+# Raw Code support
+
+We can also show the R Code:
+
+```{r}
+fit_1 <- lm(mpg ~ wt, data = mtcars)
+fit_2 <- lm(mpg ~ wt + disp, data = mtcars)
+coef(fit_1)
+```
+
 
 # Acknowledgments
 
