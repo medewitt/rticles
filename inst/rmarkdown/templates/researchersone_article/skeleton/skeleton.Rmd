@@ -43,12 +43,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 $$a^2+b^2=c^2$$
 
+# LaTeX Support
+
+$$a^2+b^2=c^2$$
+
 # Working with Plots
 
 This section includes an R generated graph.
-
-```{r echo=FALSE, fig.cap="A Nice Plot"}
+```{r demoPlot, echo=FALSE, fig.cap="A Nice Plot", fig.align='center'}
 plot(1:10)
+```
+
+# Working with Tables
+
+```{r echo=FALSE}
+knitr::kable(head(iris), 
+             booktab = TRUE, 
+             caption = "The Iris Data Set")
 ```
 
 # Acknowledgments
